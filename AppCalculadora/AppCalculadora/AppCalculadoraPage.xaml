@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:AppCalculadora" 
+    x:Class="AppCalculadora.AppCalculadoraPage"
+    BackgroundColor="#404040"
+    Title="Calculadora">
+    
+     <Grid Padding="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lbVisor" Grid.Row="0" Grid.ColumnSpan="4" Text="0" FontSize="60" TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="End"/>
+
+        <Button Grid.Row="1" Grid.Column="0" Text="C" BackgroundColor="#ddd" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonClearClicked"/>
+        <Button Grid.Row="1" Grid.Column="1" Text="+/-" BackgroundColor="#ddd" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonMaisOuMenosClicked"/>
+        <Button ClassId="btnPorcentagem" Grid.Row="1" Grid.Column="2" Text="%" BackgroundColor="#ddd" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonOperadorClicked"/>
+        <Button ClassId="btnDivisao" Grid.Row="1" Grid.Column="3" Text="DIV" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="5" FontSize="35" Clicked="ButtonOperadorClicked"/>
+
+        <Button ClassId="btn7" Grid.Row="2" Grid.Column="0" Text="7" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btn8" Grid.Row="2" Grid.Column="1" Text="8" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btn9" Grid.Row="2" Grid.Column="2" Text="9" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btnMultiplicacao" Grid.Row="2" Grid.Column="3" Text="X" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="5" FontSize="35" Clicked="ButtonOperadorClicked"/>
+
+        <Button ClassId="btn4" Grid.Row="3" Grid.Column="0" Text="4" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btn5" Grid.Row="3" Grid.Column="1" Text="5" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btn6" Grid.Row="3" Grid.Column="2" Text="6" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btnSubtracao" Grid.Row="3" Grid.Column="3" Text="-" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="5" FontSize="35" Clicked="ButtonOperadorClicked"/>
+
+        <Button ClassId="btn1" Grid.Row="4" Grid.Column="0" Text="1" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btn2" Grid.Row="4" Grid.Column="1" Text="2" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btn3" Grid.Row="4" Grid.Column="2" Text="3" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button ClassId="btnSoma" Grid.Row="4" Grid.Column="3" Text="+" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="5" FontSize="35" Clicked="ButtonOperadorClicked"/>
+
+        <Button ClassId="btn0" Grid.Row="5" Grid.ColumnSpan="2"  Text="0" BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonNumberClicked"/>
+        <Button Grid.Row="5" Grid.Column="2" Text="." BackgroundColor="#eee" TextColor="Black" BorderRadius="5" FontSize="35" Clicked="ButtonPontoClicked"/>
+        <Button x:Name="bntigual" Grid.Row="5" Grid.Column="3" Text="=" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="5" FontSize="35" Clicked="ButtonIgualClicked"/>
+        
+    </Grid>
+</ContentPage>
