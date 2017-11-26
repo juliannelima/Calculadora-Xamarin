@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{5BBBF3A1-9C41-4D2A-8B7F-3CB7645C05D8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppCalculadora/AppCalculadoraPage.xaml">
+    <Files>
+      <File FileName="AppCalculadora/AppCalculadoraPage.xaml.cs" Line="160" Column="38" />
+      <File FileName="AppCalculadora/AppCalculadoraPage.xaml" Line="32" Column="159" />
+      <File FileName="Droid/obj/Debug/AppCalculadora.Droid.AppCalculadoraPage.xaml.g.cs" Line="64" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AppCalculadora.Droid PreferredExecutionTarget="Android.5200a036ec1c747d" />
+  <MonoDevelop.Ide.ItemProperties.AppCalculadora.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2A63B9DC-D01F-4D54-A5A8-F2BBD4897B3F">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.AppCalculadora.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
